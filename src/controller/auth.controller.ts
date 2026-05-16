@@ -20,7 +20,7 @@ export class AuthController {
         req.body.email,
         req.body.password
       );
-      console.log('utilisateur connexion')
+      console.log('connexion')
       res.json(user);
     } catch (err: any) {
       res.status(400).json({ error: err.message });
